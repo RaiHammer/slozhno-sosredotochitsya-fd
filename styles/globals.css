@@ -45,3 +45,14 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+
+.header, .main, .footer{
+  margin: 10px;
+}
+
+@media (width >= 768px) {
+  .header, .main, .footer {
+    margin: 20px;
+  }
+}
