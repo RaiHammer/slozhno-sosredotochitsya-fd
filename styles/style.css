@@ -1,10 +1,9 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-
-
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   font-family: "IBM Plex Mono", sans-serif;
+  margin: 0 auto;
   max-width: 1024px;
   padding: 10px;
   background-color: var(--bg);
@@ -35,10 +34,8 @@
   outline: none;
 }
 
-.text-card__description:has(:focus-visible) {
-  .text-link {
-    outline: 1px solid currentColor;
-  }
+.text-link:focus-visible {
+  outline: 1px solid currentColor;
 }
 
 .header {
@@ -103,7 +100,7 @@
 }
 
 .header__theme-menu {
-  margin-bottom: 65px;
+  margin-block-end: 69px;
 }
 
 .header__theme-menu-list {
@@ -129,7 +126,7 @@
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--color-btn);
-  pointer-events: none
+  pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
@@ -140,7 +137,7 @@
   outline: none;
 }
 
-.header__theme-menu-item:has(:focus-visible) {
+.header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--color-btn);
 }
 
@@ -150,22 +147,31 @@
   line-height: 83%;
   color: var(--color-title-head);
   text-shadow: 4px 4px 0 var(--accent-color);
-  margin-bottom: 52px;
+  margin-block-end: 54px;
 }
 
 .header__description {
+  display: flex;
+  flex-direction: column;
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  margin-bottom: 10px;
+  margin-block-end: 14px;
 }
 
 .text-section__title {
   color: var(--color-section-title);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  margin-block-end: 21px;
 }
 
 .text-card__description {
   color: var(--color-text-content);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
 }
 
 .text-section {
@@ -178,12 +184,6 @@
   margin-block-start: 30px;
 }
 
-.text-section__title {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 23.4px;
-  margin-block-end: 20px;
-}
 .text-section__list {
   display: flex;
   flex-direction: column;
@@ -200,14 +200,11 @@
   font-weight: 400;
 }
 
-.custom-margin {
-  margin-block-end: 0;
-}
-
-.text-card__description {
+.text-section__content-title {
   font-size: 18px;
-  font-weight: 400;
-  line-height: 23.4px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-block-end: 20px;
 }
 
 .gallery {
@@ -224,6 +221,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .footer {
@@ -234,14 +232,14 @@
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
+}
 
-  &.decorated-zone::after {
-    bottom: 0px;
-  }
+.footer.decorated-zone::after {
+  bottom: 0px;
+}
 
-  &.decorated-zone::before {
-    top: 20px;
-  }
+.footer.decorated-zone::before {
+  top: 20px;
 }
 
 .footer__title {
@@ -265,19 +263,24 @@
     bottom: 20px;
   }
 
+  .header {
+    align-content: space-evenly;
+  }
+
   .header__theme-menu {
-    margin-bottom: 173px;
+    margin-block-end: 0;
   }
 
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-inline-start: -20px;
-    margin-bottom: 162px;
+    margin-block-end: 0;
   }
 
   .header__description {
     max-width: 50%;
-    margin-left: auto;
+    margin-inline-start: auto;
+    margin-block-end: 30px;
   }
 
   .text-section:first-of-type {
@@ -285,7 +288,7 @@
   }
 
   .text-section {
-    margin-block-start: 80px;
+    margin-block-start: 81px;
   }
 
   .text-two-colomn {
@@ -307,7 +310,7 @@
     grid-auto-rows: minmax(150px, auto);
     grid-auto-flow: dense;
     gap: 20px;
-    margin-top: 20px;
+    margin-block-start: 20px;
   }
 
   .img-sunset {
@@ -345,7 +348,7 @@
     align-content: stretch;
   }
   .header__theme-menu {
-    margin-bottom: 273px;
+    margin-block-end: 273px;
   }
   .header__theme-menu-list {
     display: flex;
@@ -356,7 +359,11 @@
   }
 
   .header__title {
-    margin-bottom: 114px;
+    margin-block-end: 114px;
+  }
+
+  .text-section {
+    margin-block-start: 80px;
   }
 
   .text-section__title {
