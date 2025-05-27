@@ -156,7 +156,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  margin-block-end: 0;
+  margin-block-end: -8px;
 }
 
 .text-section__title {
@@ -289,7 +289,7 @@
   .header__description {
     max-width: 50%;
     margin-inline-start: auto;
-    margin-block-end: 30px;
+    margin-block-end: 0;
   }
 
   .text-section:first-of-type {
