@@ -289,7 +289,7 @@
   .header__description {
     max-width: 50%;
     margin-inline-start: auto;
-    margin-block-end: 0;
+    margin-block-end: -6px;
   }
 
   .text-section:first-of-type {
