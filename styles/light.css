@@ -10,26 +10,45 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  --accent-color: #FF8DCB;
-  --color-title-head: #FFC2E6;
-  --color-text-head: #353430;
-  --color-text: #353430;
-  --color-background: #FF8DCB;
-  --background-img: url('/images/cover-image-light.png');
+  --accent-color: #ff8dcb;
+  --color-title-head: #ffc2e6;
+  --color-text-title: #353430;
+  --color-text-content: #353430;
+  --color-section-title: #353430;
+  --color-btn: #353430;
+  --color-btn-hover: #32312d66;
+  --bg: #353430;
+  --background-img: url("/images/cover-image-light.png");
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
-  --accent-color: #FF8DCB;
-  --color-title-head: #FFC2E6;
-  --color-text-head: #353430;
-  --color-text: #353430;
-  --color-background: #FF8DCB;
-  --background-img: url('/images/cover-image-light.png');
+  --accent-color: #ff8dcb;
+  --color-title-head: #ffc2e6;
+  --color-text-title: #353430;
+  --color-text-content: #353430;
+  --color-section-title: #353430;
+  --color-btn: #353430;
+  --color-btn-hover: #32312d66;
+  --bg: #353430;
+  --background-img: url("/images/cover-image-light.png");
+
+  .record {
+    display: none;
+  }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    /* Дублируем переменные светлой темы */    
+    /* Дублируем переменные светлой темы */
+    --accent-color: #ff8dcb;
+    --color-title-head: #ffc2e6;
+    --color-text-title: #353430;
+    --color-text-content: #353430;
+    --color-section-title: #353430;
+    --color-btn: #353430;
+    --color-btn-hover: #32312d66;
+    --bg: #353430;
+    --background-img: url("/images/cover-image-light.png");
   }
 }
