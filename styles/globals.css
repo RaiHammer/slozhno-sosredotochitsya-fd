@@ -46,13 +46,16 @@ a {
   line-height: inherit;
 }
 
-
-.header, .main, .footer{
-  margin: 10px;
+.header,
+.main,
+.footer {
+  padding: 10px;
 }
 
 @media (width >= 768px) {
-  .header, .main, .footer {
-    margin: 20px;
+  .header,
+  .main,
+  .footer {
+    padding: 20px;
   }
 }
