@@ -17,21 +17,12 @@
   --color-section-title: #353430;
   --color-btn: #353430;
   --color-btn-hover: #32312d66;
-  --bg: #353430;
-  --background-img: url("/images/cover-image-light.png");
+  --bg: #fff1f7;
+  --background-img: url("../images/cover-image-light.png");
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
-  --accent-color: #ff8dcb;
-  --color-title-head: #ffc2e6;
-  --color-text-title: #353430;
-  --color-text-content: #353430;
-  --color-section-title: #353430;
-  --color-btn: #353430;
-  --color-btn-hover: #32312d66;
-  --bg: #353430;
-  --background-img: url("/images/cover-image-light.png");
 
   .record {
     display: none;
@@ -48,7 +39,11 @@
     --color-section-title: #353430;
     --color-btn: #353430;
     --color-btn-hover: #32312d66;
-    --bg: #353430;
-    --background-img: url("/images/cover-image-light.png");
+    --bg: #fff1f7;
+    --background-img: url("../images/cover-image-light.png");
+  }
+
+  .record {
+    display: none;
   }
 }
